@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight, Bell, Bot, Building2, ChevronDown, Crosshair, Expand,
-  FileText, Grid2X2, Heat, Home, Info, Layers3, Leaf, Map, Menu,
+  FileText, Flame, Grid2X2, Home, Info, Layers3, Leaf, Map, Menu,
   Moon, Search, Settings, Sparkles, Thermometer, TrendingUp, X,
   ZoomIn, ZoomOut,
 } from "lucide-react";
@@ -30,14 +30,14 @@ const nav = [
 ] as const;
 
 const stats = [
-  { value: "23.4%", label: "High Heat Risk Wards", note: "↑ 4.2% from last year", icon: Heat, tone: "hot" },
+  { value: "23.4%", label: "High Heat Risk Wards", note: "↑ 4.2% from last year", icon: Flame, tone: "hot" },
   { value: "42.1°C", label: "Highest Observed LST", note: "Central Zone", icon: Thermometer, tone: "cool" },
   { value: "369", label: "Total Wards", note: "Greater Bengaluru Area", icon: Grid2X2, tone: "green" },
   { value: "17", label: "Persistent Heat Pockets", note: "> 3 consecutive observations", icon: TrendingUp, tone: "violet" },
 ] as const;
 
 const insights = [
-  { title: "Central & East Bengaluru show highest heat risk", text: "Consistently high LST and low vegetation.", icon: Heat, tone: "hot" },
+  { title: "Central & East Bengaluru show highest heat risk", text: "Consistently high LST and low vegetation.", icon: Flame, tone: "hot" },
   { title: "Wards with higher green cover are up to 4.2°C cooler", text: "NDVI shows strong negative correlation with LST.", icon: Leaf, tone: "green" },
   { title: "17 ward clusters show persistent heat pockets", text: "High risk across 3+ observations.", icon: TrendingUp, tone: "violet" },
   { title: "Future model indicates rising risk in southern wards", text: "Action needed for vulnerable zones.", icon: Info, tone: "blue" },
